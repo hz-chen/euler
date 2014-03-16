@@ -1,0 +1,65 @@
+/*******************************************
+*
+* Author: HzChen - hzchen_cs@gwmail.gwu.edu
+*
+*
+* Last modified:	01-29-2014 23:34
+*
+* Filename:		test.c
+*
+* Description: 
+*
+* The sum of the primes below 10 is 2 + 3 + 5 + 7 = 17.
+*
+* Find the sum of all the primes below two million.
+*
+*
+******************************************/
+#include <stdlib.h>
+#include <stdio.h>
+
+#define SZ 	2000000
+
+int primes[SZ] = { [0 ... SZ-1 ] = 1};
+
+void init()
+{
+	
+	primes[0]=0;
+	primes[1]=0;
+	primes[2]=1;
+	primes[3]=1;
+
+	int i=0, j=0;
+	for(i=2; i<SZ; i++)
+	{
+		int up_j = SZ / i + 1;
+		for(j=2; j<up_j; j++)
+		{
+			primes[i*j]=0;
+		}
+	}
+
+}
+
+int sum()
+{
+	int i=0, sum=0;
+	for(i=0; i<SZ; i++)
+	{
+		if(primes[i])
+			sum+=i;
+	}
+	return sum;
+}
+
+
+int main(int argc, char** argv)
+{
+
+	init();
+	printf("sum is %d\n", sum());
+
+	return EXIT_SUCCESS;
+}
+

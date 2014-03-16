@@ -1,0 +1,59 @@
+/*******************************************
+*
+* Author: HzChen - hzchen_cs@gwmail.gwu.edu
+*
+*
+* Last modified:	01-25-2014 06:44
+*
+* Filename:		test.c
+*
+* Description: 
+*
+* 2520 is the smallest number that can be divided by each of the numbers from 1 to 10 without any remainder.
+*
+* What is the smallest positive number that is evenly divisible by all of the numbers from 1 to 20?
+* 
+*
+******************************************/
+#include <stdlib.h>
+#include <stdio.h>
+
+#define RANGE	10
+
+//marks to see if a number can be divided by smaller number or not.
+int prime[RANGE] = {0};
+
+int divisible(int num)
+{
+	int i=0;
+	if(num < 3)
+		return 0;
+	for(i=2; i<num; i++)
+	{
+		if(num % i == 0)
+			return 1;
+	}
+	return 0;
+}
+
+
+int main(int argc, char** argv)
+{
+
+	int i=0;
+	int multiple = 1;
+	
+	for(i=1; i <= RANGE; i++)
+	{
+		if(!divisible(i))
+		{
+			printf("not divisible: %d\n", i);
+			multiple *= i;
+		}
+	}
+	
+	printf("multiple is: %d\n", multiple);
+
+	return EXIT_SUCCESS;
+}
+

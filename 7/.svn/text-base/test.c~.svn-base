@@ -1,0 +1,56 @@
+/*******************************************
+*
+* Author: HzChen - hzchen_cs@gwmail.gwu.edu
+*
+*
+* Last modified:	01-27-2014 00:40
+*
+* Filename:		test.c
+*
+* Description: 
+*
+*
+*
+* By listing the first six prime numbers: 2, 3, 5, 7, 11, and 13, we can see that the 6th prime is 13.
+*
+* What is the 10 001st prime number?
+*
+*
+*
+******************************************/
+#include <stdlib.h>
+#include <stdio.h>
+
+int is_prime(int num)
+{
+	if(num <= 3)
+		return 1;
+
+	int i=1;
+	for(i=2; i < num; i++)
+	{
+		if(num % i == 0)
+			return 0;
+	}
+
+	return 1;
+}
+
+int main(int argc, char** argv)
+{
+	long int i = 2;
+	int cnt = 0;
+	while(cnt <=100)
+	{
+		if(is_prime(i))
+		{
+			cnt++;
+			printf("%d st prime is %ld\n", cnt, i);
+		}
+		i++;
+	}
+
+
+	return EXIT_SUCCESS;
+}
+

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 26
+/cjobs/!svn/ver/15/euler/6
+END
+res.txt
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/cjobs/!svn/ver/15/euler/6/res.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 35
+/cjobs/!svn/ver/15/euler/6/Makefile
+END
+test.c~
+K 25
+svn:wc:ra_dav:version-url
+V 34
+/cjobs/!svn/ver/19/euler/6/test.c~
+END
+test
+K 25
+svn:wc:ra_dav:version-url
+V 31
+/cjobs/!svn/ver/15/euler/6/test
+END
+test.c
+K 25
+svn:wc:ra_dav:version-url
+V 33
+/cjobs/!svn/ver/15/euler/6/test.c
+END
