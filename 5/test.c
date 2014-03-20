@@ -36,7 +36,7 @@ int sln(int range)
 int main(int argc, char** argv)
 {
 
-	printf("%d should be 2520.\n", sln(10));
+//	printf("%d should be 2520.\n", sln(10));
 	printf("result from 1 - 20 is %d\n", sln(20));
 
 	return EXIT_SUCCESS;
