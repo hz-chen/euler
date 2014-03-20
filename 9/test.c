@@ -24,22 +24,6 @@
 #include <stdio.h>
 #include <math.h>
 
-int sln1()
-{
-	int i=0, j=0, k=0;
-	for(i=1; i<1000; i++)
-		for(j=1; j<1000; j++)
-			for(k=1; k<1000; k++)
-			{
-				if(pow(k, 2) == pow(i, 2) + pow(j, 2) && i + j + k == 1000)
-				{
-					printf("i: %d\tj:%d\tk:%d\n", i, j, k);
-					return i*j*k;
-				}
-
-			}
-	return 0;
-}
 
 /**
  *	b/c 		a^2 + b^2	= c^2
@@ -77,7 +61,7 @@ int sln1()
  * 		=> sqrt(K/4)	<	m	<	sqrt(K/2)
  * 	and:=>	n = K / (2*m) - m^2;
  */
-int sln2()
+int sln()
 {
 	double K = 1000;
 	double tmp_n=0, frac=0;
@@ -101,10 +85,7 @@ int sln2()
 
 int main(int argc, char** argv)
 {
-	printf("sln1: \n");
-	sln1();
-	printf("sln2: \n");
-	sln2();
+	sln();
 	return EXIT_SUCCESS;
 }
 
