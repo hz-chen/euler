@@ -11,10 +11,8 @@ int ab_arr[SZ] = {[0 ... (SZ-1)] = 0};
 int sums[SZ] = {[0 ... (SZ-1)] = 0} ;
 
 /**
- *
  * This algorithm copied from question 22 is terrible.
  * I'll fix it later if possible.
- *
  */
 int d(int const num) {
 	int end = sqrt(num);
