@@ -1,0 +1,6 @@
+test: test.c
+	g++ -g -Wall -o test test.c
+
+clean:
+	rm -f test
+
