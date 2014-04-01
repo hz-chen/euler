@@ -1,0 +1,80 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+EULER_H	euler.h	2;"	d
+LEN	Question16.java	/^	static int LEN = 1000000;$/;"	f	class:Question16
+Question14	Question14.java	/^public class Question14 {$/;"	c
+Question15	Question15.java	/^public class Question15 {$/;"	c
+Question16	Question16.java	/^public class Question16 {$/;"	c
+Question17	Question17.java	/^public class Question17 {$/;"	c
+Question18And67	Question18And67.java	/^public class Question18And67 {$/;"	c
+Question19	Question19.java	/^public class Question19 {$/;"	c
+Question20	Question20.java	/^public class Question20 {$/;"	c
+Question21	Question21.java	/^public class Question21 {$/;"	c
+Question22	Question22.java	/^public class Question22 {$/;"	c
+Question25	Question25.java	/^public class Question25 {$/;"	c
+Question26	Question26.java	/^public class Question26 {$/;"	c
+RANGE	Question14.java	/^	static int RANGE = 1000000;$/;"	f	class:Question14
+SZ_I	Question15.java	/^	static int SZ_I, SZ_J;$/;"	f	class:Question15
+SZ_J	Question15.java	/^	static int SZ_I, SZ_J;$/;"	f	class:Question15
+_euler_arr_multi	euler.h	/^void _euler_arr_multi( int (*(*mul))[], int const (*num)[], int arr_len, int num_len, int max_len)$/;"	f
+_euler_find_next_bigger	euler.h	/^_euler_find_next_bigger( int (*arr)[], int const pos, int const end)$/;"	f
+_euler_lexical_perm	euler.h	/^_euler_lexical_perm( int (*arr)[], int const arr_sz)$/;"	f
+_euler_print_arr	euler.h	/^void _euler_print_arr(int const arr[], int const arr_sz)$/;"	f
+_euler_sort_acending	euler.h	/^void _euler_sort_acending( int (*arr)[], int const start, int const end)$/;"	f
+_euler_sort_decending	euler.h	/^void _euler_sort_decending( int (*arr)[], int const start, int const end)$/;"	f
+_euler_swap	euler.h	/^void _euler_swap(int *a, int *b)$/;"	f
+and	Question17.java	/^	static int and = 3;$/;"	f	class:Question17
+arr	Question14.java	/^	static long[] arr = new long[RANGE];$/;"	f	class:Question14
+calculate	Question16.java	/^	public static void calculate(int power) {$/;"	m	class:Question16
+calculate	Question17.java	/^	public static int calculate() {$/;"	m	class:Question17
+calculate	Question18And67.java	/^	private static int calculate() {$/;"	m	class:Question18And67	file:
+cnt	Question17.java	/^	static int cnt[] = new int[1001];$/;"	f	class:Question17
+cnt_grid	Question15.java	/^	static long cnt_grid[][];$/;"	f	class:Question15
+count	Question15.java	/^	public static long count() {$/;"	m	class:Question15
+curPos	Question20.java	/^	static int curPos;$/;"	f	class:Question20
+curr	Question25.java	/^	static int curr[] = new int[1024];$/;"	f	class:Question25
+curr_pos	Question16.java	/^	static int curr_pos = 0; \/\/ current highest bit$/;"	f	class:Question16
+d	Question21.java	/^	private static int d(int num) {$/;"	m	class:Question21	file:
+getFrac	Question26.java	/^	private static int getFrac(int num) {$/;"	m	class:Question26	file:
+getNextFeb	Question25.java	/^	private static void getNextFeb() {$/;"	m	class:Question25	file:
+get_result	Question16.java	/^	public static double get_result() {$/;"	m	class:Question16
+get_term	Question14.java	/^	public static long get_term(int num) {$/;"	m	class:Question14
+hundred	Question17.java	/^	static int hundred = 7;$/;"	f	class:Question17
+init	Question15.java	/^	public static void init(int i, int j) {$/;"	m	class:Question15
+init	Question16.java	/^	public static void init() {$/;"	m	class:Question16
+init	Question17.java	/^	public static void init() {$/;"	m	class:Question17
+init	Question20.java	/^	private static void init(int num) {$/;"	m	class:Question20	file:
+init	Question25.java	/^	private static void init() {$/;"	m	class:Question25	file:
+likely	test.c	8;"	d	file:
+main	Question14.java	/^	public static void main(String[] args) {$/;"	m	class:Question14
+main	Question15.java	/^	public static void main(String[] args) {$/;"	m	class:Question15
+main	Question16.java	/^	public static void main(String[] args) {$/;"	m	class:Question16
+main	Question17.java	/^	public static void main(String[] args) {$/;"	m	class:Question17
+main	Question18And67.java	/^	public static void main(String[] args) {$/;"	m	class:Question18And67
+main	Question19.java	/^	public static void main(String[] args) {$/;"	m	class:Question19
+main	Question20.java	/^	public static void main(String[] args) {$/;"	m	class:Question20
+main	Question21.java	/^	public static void main(String[] args) {$/;"	m	class:Question21
+main	Question22.java	/^	public static void main(String[] args) throws IOException {$/;"	m	class:Question22
+main	Question25.java	/^	public static void main(String[] args) {$/;"	m	class:Question25
+main	Question26.java	/^	public static void main(String[] args) {$/;"	m	class:Question26
+main	euler_test.c	/^int main(int argc, char** argv)$/;"	f
+main	test.c	/^int main(int argc, char** argv)$/;"	f
+matrix	Question18And67.java	/^	static int matrix[][] = {$/;"	f	class:Question18And67
+months	Question19.java	/^	static int months[] = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };$/;"	f	class:Question19
+mul	Question20.java	/^	public static void mul(int val) {$/;"	m	class:Question20
+numDigits	Question25.java	/^	private static long numDigits(BigInteger testNum) {$/;"	m	class:Question25	file:
+pos	Question25.java	/^	static int pos = 0;$/;"	f	class:Question25
+prev	Question25.java	/^	static int prev[] = new int[1024];$/;"	f	class:Question25
+print	Question25.java	/^	private static void print() {$/;"	m	class:Question25	file:
+res	Question16.java	/^	static int res[] = new int[LEN];$/;"	f	class:Question16
+res	Question20.java	/^	static int res[];$/;"	f	class:Question20
+s	Question26.java	/^	private static Set<Integer> s = new HashSet<Integer>();$/;"	f	class:Question26	file:
+sln2	Question25.java	/^	private static void sln2() {$/;"	m	class:Question25	file:
+term	Question25.java	/^	static int term = 0;$/;"	f	class:Question25
+thousand	Question17.java	/^	static int thousand = 8;$/;"	f	class:Question17
+time_two	Question16.java	/^	public static void time_two() {$/;"	m	class:Question16
+unlikely	test.c	7;"	d	file:
