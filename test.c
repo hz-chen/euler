@@ -11,7 +11,7 @@
 
 int main(int argc, char** argv)
 {
-	int i=0, j=0;
+	int i=0;
 
 	/*
 	printf("testing _euler_swap\n");
@@ -57,17 +57,21 @@ int main(int argc, char** argv)
 
 	printf("testing _euler_arr_multi\n");
 
-	int (*mul)[SZ] = (int (*)[SZ])malloc(sizeof(int) * SZ);
+	int (*(*mul))[SZ] = (int (*(*))[SZ])malloc(sizeof(int*));
+	*mul = (int ((*))[SZ])malloc(sizeof(int) * (SZ+1));
 	for(i=0; i < SZ; i++)
-		(*mul)[i] = 0;
-	(*mul)[SZ-1] = 2;
-	int const num[3] = {7, 8, 9};
-	
-	_euler_arr_multi(&mul, &num, SZ, 3, SZ);
-	for(i=0; i < SZ; i++)
-		printf("%d ", (*mul)[i]);
+		(*(*mul))[i] = 0;
+	(*(*mul))[0] = 2;
+	int const num[5] = {1, 2, 3, 4, 5};
+
+	_euler_arr_multi(mul, &num, SZ, 5, SZ);
+	for(i=SZ-1; i >=0; i--)
+		printf("%d", (*(*mul))[i]);
 	printf("\n");
+	free(*mul);
+	*mul = NULL;
 	free(mul);
+	mul = NULL;
 
 	printf("testing _euler_arr_multi done\n");
 
