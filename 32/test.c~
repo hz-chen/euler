@@ -71,9 +71,10 @@ int main(int argc, char** argv)
 	}
 	for(i = 1000; i < 10000; i ++)
 	{
-		counter += cnt[i];
+		if(cnt[i])
+		counter += i;
 	}
-	printf("# of diff pandigits: %d\n", counter);
+	printf("sum of diff pandigits products: %d\n", counter);
 	
 
 	return EXIT_SUCCESS;
