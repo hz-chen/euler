@@ -145,14 +145,6 @@ void _euler_arr_multi( int (*(*mul))[], int const (*num)[], int arr_len, int num
 		
 	}
 	
-	for( i=0; i < num_len; i++)
-	{
-		for( j =arr_len-1 ; j >= 0; j --)
-			printf("%d ", (*tmp)[i][j]);
-		printf("\n");
-	}
-
-
 	int new_len = (arr_len + num_len > max_len && max_len != 0 ? max_len + 1: arr_len + num_len + 1);
 	int (*res)[new_len] = (int (*)[new_len])malloc((new_len ) * sizeof(int));
 
