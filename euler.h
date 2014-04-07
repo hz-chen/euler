@@ -4,7 +4,35 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <math.h>
 
+
+#define unlikely(x)     __builtin_expect(!!(x), 0)
+#define likely(x)     	__builtin_expect(!!(x), 1)
+
+/**
+ *   return 1 if num is prime, 0 otherwise.
+ */
+int _euler_is_prime(int num)
+{
+	if(unlikely(num < 2))
+		return 0;
+	if(unlikely(num == 2 || num == 3))
+		return 1;
+	if(!(num%2))
+		return 0;
+	if(!(num%3))
+		return 0;
+	if((num+1)%6 && (num-1)%6)
+		return 0;
+
+	int range = sqrt(num);
+	int i=0;
+	for(i=3; i <= range; i+=2)
+		if(!(num%i))
+			return 0;
+	return 1;
+}
 
 /**
  *	swap two integers
